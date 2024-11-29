@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "APP_DEFAULT_TITLE",
+    title: "Admin",
     // startUpImage: [],
   },
   title: "Dashboard",

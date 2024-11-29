@@ -1,29 +1,26 @@
 {
-  "id": "1",
-  "name": "My awesome PWA app",
-  "short_name": "PWA App",
-  "description": "This is the sample PWA",
+  "theme_color": "#8936FF",
+  "background_color": "#2EC6FE",
   "icons": [
     {
-      "src": "/avatars/01.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/avatars/01.png",
-      "sizes": "384x384",
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "icon512_maskable.png",
       "type": "image/png"
     },
     {
-      "src": "/avatars/01.png",
+      "purpose": "any",
       "sizes": "512x512",
+      "src": "icon512_rounded.png",
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
-  "start_url": "/",
+  "orientation": "any",
   "display": "standalone",
-  "orientation": "portrait"
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "Admin",
+  "short_name": "Admin",
+  "start_url": "/",
+  "scope": "/"
 }
