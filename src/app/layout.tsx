@@ -8,6 +8,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "APP_DEFAULT_TITLE",
+    // startUpImage: [],
+  },
   title: "Dashboard",
   description: "Admin dashboard",
 };
