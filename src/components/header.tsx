@@ -14,6 +14,7 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import { UserNav } from "@/components/user-nav";
+import { Notifications } from "@/components/notifications";
 import { cn } from "@/lib/utils";
 
 interface HeaderProps {
@@ -124,6 +125,7 @@ export function Header({ staff }: HeaderProps) {
             />
           </div>
         </form>
+        <Notifications />
         <UserNav />
       </div>
     </header>

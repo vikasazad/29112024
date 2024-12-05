@@ -1,3 +1,4 @@
+"use server";
 import { auth } from "@/auth";
 import DashboardOverview from "@/components/dashboard-overview";
 import { get7daysDataFromAll, getLiveData } from "@/lib/firebase/firestore";

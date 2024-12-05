@@ -2,9 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CalendarDateRangePicker } from "@/components/date-range-picker";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Overview from "@/app/modules/dashboard/overview/components/overview";
-import Analytics from "@/app/modules/dashboard/analytics/components/analytics";
-import Notifications from "@/app/modules/dashboard/notifications/components/notifications";
-import Reports from "@/app/modules/dashboard/reports/components/reports";
+
 import { Header } from "@/components/header";
 
 export default function Dashboard() {
@@ -28,15 +26,6 @@ export default function Dashboard() {
           </TabsList>
           <TabsContent value="overview" className="space-y-4">
             <Overview />
-          </TabsContent>
-          <TabsContent value="analytics" className="space-y-4">
-            <Analytics />
-          </TabsContent>
-          <TabsContent value="reports" className="space-y-4">
-            <Reports />
-          </TabsContent>
-          <TabsContent value="notifications" className="space-y-4">
-            <Notifications />
           </TabsContent>
         </Tabs>
       </div>

@@ -3,17 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import AuthWrapper from "@/components/auth-wrapper";
 import { Toaster } from "@/components/ui/sonner";
+import GlobalNotificationProvider from "@/hooks/useFcmToken";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   manifest: "/manifest.json",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "default",
-    title: "Admin",
-    // startUpImage: [],
-  },
+
   title: "Dashboard",
   description: "Admin dashboard",
 };
@@ -26,8 +22,12 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AuthWrapper>{children}</AuthWrapper>
-        <Toaster />
+        <AuthWrapper>
+          <GlobalNotificationProvider>
+            <Toaster />
+            {children}
+          </GlobalNotificationProvider>
+        </AuthWrapper>
       </body>
     </html>
   );
